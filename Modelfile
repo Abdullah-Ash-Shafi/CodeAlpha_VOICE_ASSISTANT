@@ -1,0 +1,2 @@
+FROM mistral
+PARAMETER system "Give short and concise responses."
