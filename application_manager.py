@@ -29,7 +29,7 @@ def close_application(app_name):
     for proc in psutil.process_iter(['pid', 'name']):
         if app_name.lower() in proc.info['name'].lower():
             proc.terminate()
-            speak(f"Closing {proc.info['name']}")
+            speak(f"Closing")
             break
     else:
         speak(f"Could not find {app_name} running.")
